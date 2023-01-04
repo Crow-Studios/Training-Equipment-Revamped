@@ -12,6 +12,7 @@ class training_magazines
         ace_unconsciousTime = 12;
         ace_unconsciousShots[] = {4,6,8}; // 3 elements ideally. It will use the random function so it'll select randomly inbetween the lowest, middle, and highest
 
+        // these currently aren't implemented
         ace_damageAreas[] = {"leg_r", "leg_l"};
         ace_damageTypes[] = {"bullet"};
 
@@ -28,6 +29,7 @@ class training_magazines
         ace_unconsciousTime = 14;
         ace_unconsciousShots[] = {3,5,7}; // 3 elements ideally. It will use the random function so it'll select randomly inbetween the lowest, middle, and highest
 
+        // these currently aren't implemented
         ace_damageAreas[] = {"leg_r", "leg_l"};
         ace_damageTypes[] = {"bullet"};
         
@@ -44,6 +46,7 @@ class training_magazines
         ace_unconsciousTime = 17;
         ace_unconsciousShots[] = {2,4,6}; // 3 elements ideally. It will use the random function so it'll select randomly inbetween the lowest, middle, and highest
 
+        // these currently aren't implemented
         ace_damageAreas[] = {"leg_r", "leg_l"};
         ace_damageTypes[] = {"bullet"};
 
@@ -60,6 +63,7 @@ class training_magazines
         ace_unconsciousTime = 23;
         ace_unconsciousShots[] = {1,1,2}; // 3 elements ideally. It will use the random function so it'll select randomly inbetween the lowest, middle, and highest
 
+        // these currently aren't implemented
         ace_damageAreas[] = {"leg_r", "leg_l"};
         ace_damageTypes[] = {"bullet"};
 

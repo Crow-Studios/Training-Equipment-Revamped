@@ -92,7 +92,7 @@ class cfgWeapons
 
 		class ItemInfo: InventoryMuzzleItem_Base_F
 		{
-			soundTypeIndex = 0; // index of sound in sounds[] in weapon modes (inherited 1 from parent class)
+			soundTypeIndex = 1; // index of sound in sounds[] in weapon modes (inherited 1 from parent class)
 
 			class MagazineCoef
 			{
@@ -101,13 +101,13 @@ class cfgWeapons
 
 			class AmmoCoef
 			{
-				hit = 1;
-				visibleFire = 0;
+				hit = 0.8;
+				visibleFire = 0.3;
 				audibleFire = 0.8;
-				visibleFireTime = 0;
+				visibleFireTime = 0.5;
 				audibleFireTime = 1.0;
 				cost = 1.0;
-				typicalSpeed = 0;
+				typicalSpeed = 0.8;
 				airFriction = 1.0;
 			};
 

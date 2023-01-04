@@ -4,6 +4,8 @@ diag_log format["%1 was damaged by %2", _unit, _instigator];
 
 private _unconsciousTime = [(configFile >> "training_magazines" >> _magazine), "unconsciousTime", 0] call BIS_fnc_returnConfigEntry;
 
+if !(missionNamespace getVariable ["training_mag_dynamic_unconsciousTime",true]) then {_unconsciousTime = 10};
+
 private _ace = call training_mag_fnc_client_hasACE;
 
 private _veh = vehicle _unit;

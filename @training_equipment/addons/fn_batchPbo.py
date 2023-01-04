@@ -50,4 +50,11 @@ def packAllPbo(addonbuilder,img2paa,in_path,out_path):
         else:
             print(f"{in_path}/{folder} was not a folder, not packing\n\n\n\n\n")
 
+    repack = input("Would you like to repack again? \n")
+
+    if (repack == "y".upper()):
+        packAllPbo(addonbuilder, img2paa, in_path, out_path);
+    else:
+        exit
+
 packAllPbo(addonbuilder, img2paa, in_path, out_path)

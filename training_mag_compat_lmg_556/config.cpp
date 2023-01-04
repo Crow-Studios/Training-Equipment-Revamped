@@ -26,14 +26,25 @@ class cfgPatches
 
 class CfgMagazines
 {
-	class 200Rnd_556x45_Box_Tracer_Red_F;
-	class training_mag_200rnd_556_base : 200Rnd_556x45_Box_Tracer_Red_F 
-	{
-		scope = 2;
-		count = "200";
-		author = "Crow Studios/C. Eagle";
-		picture = "\training_core\crow_studios_co.paa";
-	};
+	#if __has_include("\rhsusf\addons\rhsusf_main\config.bin") // rhs uses special models only on their lmg, this should fix it
+		class rhsusf_200Rnd_556x45_box;
+		class training_mag_200rnd_556_base : rhsusf_200Rnd_556x45_box 
+		{
+			scope = 2;
+			count = "200";
+			author = "Crow Studios/C. Eagle";
+			picture = "\training_core\crow_studios_co.paa";
+		};
+	#else
+		class 200Rnd_556x45_Box_Tracer_Red_F;
+		class training_mag_200rnd_556_base : 200Rnd_556x45_Box_Tracer_Red_F 
+		{
+			scope = 2;
+			count = "200";
+			author = "Crow Studios/C. Eagle";
+			picture = "\training_core\crow_studios_co.paa";
+		};
+	#endif
 
 	class training_mag_556_200rnd_blank : training_mag_200rnd_556_base
 	{
