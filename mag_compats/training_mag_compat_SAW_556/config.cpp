@@ -1,10 +1,6 @@
-#if __has_include("\rhsusf\addons\rhsusf_main\config.bin")
-	#define HASRHS 1 // rhs uses special models only on their lmg, this should fix it
-
-#if HASRHS
-
 class cfgPatches
 {
+	#if __has_include("\rhsusf\addons\rhsusf_main\config.bin")
 	class training_mag_compat_SAW_556
 	{
 		units[] =
@@ -23,11 +19,32 @@ class cfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"training_mag_common"};
 	};
+	#else
+	class training_mag_compat_SAW_556
+	{
+		units[] =
+		{
+			""
+		};
+		weapons[] =
+		{
+			""
+		};
+		magazines[] =
+		{
+			""
+		};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"training_mag_common"};
+	};
+	#endif
 };
 
 // These compats should *technically* run independently of the main mod (I don't need to add each persons base class), so just slap your new base classes in these instead
 
 #include "config\cfgTrainingMagazines.hpp"
+
+#if __has_include("\rhsusf\addons\rhsusf_main\config.bin")
 
 class CfgMagazines
 {

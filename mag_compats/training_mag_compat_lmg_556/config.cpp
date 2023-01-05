@@ -18,8 +18,6 @@ class cfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"training_mag_common"};
 	};
-	#if __has_include("\rhsusf\addons\rhsusf_main\config.bin")
-		#define HASRHS 1 // rhs uses special models only on their lmg, this should fix it
 };
 
 // These compats should *technically* run independently of the main mod (I don't need to add each persons base class), so just slap your new base classes in these instead
@@ -28,7 +26,7 @@ class cfgPatches
 
 class CfgMagazines
 {
-	#if HASRHS
+	#if __has_include("\rhsusf\addons\rhsusf_main\config.bin")
 		class rhsusf_200Rnd_556x45_box;
 		class training_mag_200rnd_556_base : rhsusf_200Rnd_556x45_box 
 		{

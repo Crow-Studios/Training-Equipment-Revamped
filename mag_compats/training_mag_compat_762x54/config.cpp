@@ -1,7 +1,5 @@
 class cfgPatches
 {
-	#if __has_include("\rhsafrf\addons\rhs_main\config.bin")
-		#define HASRHSAFRF 1
 	class training_mag_compat_762x54
 	{
 		units[] =
@@ -19,7 +17,7 @@ class cfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"training_mag_common"};
 	};
-	#if HASRHSAFRF
+	#if __has_include("\rhsafrf\addons\rhs_main\config.bin")
 	class training_mag_compat_762x54_rhs
 	{
 		units[] =
@@ -61,7 +59,7 @@ class CfgMagazines
 		ammo = "training_mag_rubber_bullet";
 	};
 
-	#if HASRHSAFRF
+	#if __has_include("\rhsafrf\addons\rhs_main\config.bin")
 	class rhs_100Rnd_762x54mmR_7N26;
 	class 100Rnd_762x54_Mag_Base : rhs_100Rnd_762x54mmR_7N26   
 	{
@@ -86,7 +84,7 @@ class CfgMagazineWells
 	{
 		training_mag_compat_762x54[] = {"10Rnd_762x54_Mag_Rubber"};
 	};
-	#if HASRHSAFRF
+	#if __has_include("\rhsafrf\addons\rhs_main\config.bin")
 	class PK_762x54R
 	{
 		training_mag_compat_762x54[] = {"100Rnd_762x54_Mag_Rubber"};
