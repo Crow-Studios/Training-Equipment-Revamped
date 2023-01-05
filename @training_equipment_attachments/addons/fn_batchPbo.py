@@ -5,8 +5,8 @@ import time
 addonbuilder = "F:\SteamLibrary\steamapps\common\Arma 3 Tools\AddonBuilder"
 img2paa = "F:\SteamLibrary\steamapps\common\Arma 3 Tools\ImageToPAA"
 
-in_path = "G:\Github Repos\\training_equipment_revamped\\core"
-out_path = "G:\Github Repos\\training_equipment_revamped\@training_equipment_core\\addons"
+in_path = "G:\Github Repos\\training_equipment_revamped\\attachments"
+out_path = "G:\Github Repos\\training_equipment_revamped\@training_equipment_attachments\\addons"
 
 def imgToPaa(img2paa,in_path):
 
