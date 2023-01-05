@@ -10,7 +10,7 @@ _projectile addEventHandler ["Explode",
 
     private _grenade = "#particlesource" createVehicle ASLtoATL _pos;
 
-    private _ace = call training_mag_fnc_client_hasACE;
+    private _ace = call training_core_fnc_client_hasACE;
 
     if !(missionNamespace getVariable ["training_mag_dynamic_unconsciousTime",true]) then {_unconsciousTime = 10};
 

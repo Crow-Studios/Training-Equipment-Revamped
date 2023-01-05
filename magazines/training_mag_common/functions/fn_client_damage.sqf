@@ -6,7 +6,7 @@ private _unconsciousTime = [(configFile >> "training_magazines" >> _magazine), "
 
 if !(missionNamespace getVariable ["training_mag_dynamic_unconsciousTime",true]) then {_unconsciousTime = 10};
 
-private _ace = call training_mag_fnc_client_hasACE;
+private _ace = call training_core_fnc_client_hasACE;
 
 private _veh = vehicle _unit;
 

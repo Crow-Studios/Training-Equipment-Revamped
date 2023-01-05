@@ -7,7 +7,7 @@ if !(_isTrainingMag) exitWith {nil};
 
 private _unconsciousShots = [(configFile >> "training_magazines" >> _magazine), "unconsciousShots", false] call BIS_fnc_returnConfigEntry;
 
-if (call training_mag_fnc_client_hasACE) then
+if (call training_core_fnc_client_hasACE) then
 {
     _unconsciousShots = [(configFile >> "training_magazines" >> _magazine), "ace_unconsciousShots", false] call BIS_fnc_returnConfigEntry;
 };

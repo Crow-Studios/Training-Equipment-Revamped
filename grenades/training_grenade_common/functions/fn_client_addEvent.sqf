@@ -7,11 +7,23 @@ private _index = _unit addEventHandler ["Fired",
     private _isTrainingGrenade = [_magazine] call training_grenade_fnc_client_isTrainingGrenade;
     if !(_isTrainingGrenade) exitWith {nil};
     
-    if (_isTrainingGrenade) then {
-        [_projectile, _magazine] spawn training_grenade_fnc_client_explodeGrenade;
-    };
+    [_projectile, _magazine] spawn training_grenade_fnc_client_explodeGrenade;
 
 }];
+
+if (call training_core_fnc_client_hasACE) then {
+    diag_log format ["ACE Was detected, adding event handler for ace"];
+    ["ace_firedPlayer", {
+        private _magazine = _this select 5;
+        private _projectile = _this select 6;
+        
+        private _isTrainingGrenade = [_magazine] call training_grenade_fnc_client_isTrainingGrenade;
+        if !(_isTrainingGrenade) exitWith {nil};
+
+        [_projectile, _magazine] spawn training_grenade_fnc_client_explodeGrenade;
+    }] call CBA_fnc_addEventHandler;
+    // ace throwing compatibility
+};
 
 _unit setVariable ["training_mag_var_firedEHIndex", _index];
 

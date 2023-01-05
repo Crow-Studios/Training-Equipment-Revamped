@@ -28,6 +28,11 @@ class CfgFunctions
 				postInit = 0;
                 file = "training_core\functions\fn_client_addEvent.sqf";
             };
+            class client_hasACE
+            {
+				postInit = 0;
+                file = "training_core\functions\fn_client_hasACE.sqf";
+            };
         };
     };
 };
