@@ -1,0 +1,1 @@
+*.pbo,*.p3d;*.paa,*.jpg,*.sqf,*.rtm,*.cpp,*.ogg,*.txt,*.cfg,*.hpp,*.xcf,*.sqm,*.h,*.lst,*.wav,*.wss,*.rvmat,*.ext
