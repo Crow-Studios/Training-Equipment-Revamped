@@ -56,3 +56,16 @@ class cfgWeapons
 		};
 	};
 };
+
+class cfgVehicles
+{
+    class Static;
+    class training_grenade_object_mk2 : Static {
+		author="Crow Studios";
+        scope = 2;
+        model="training_grenade_mk2\grenade_mk2";
+        displayName = "Mk2 Training Grenade";
+        faction = "Empty";
+        vehicleClass = "training_grenade_class";
+    };
+};

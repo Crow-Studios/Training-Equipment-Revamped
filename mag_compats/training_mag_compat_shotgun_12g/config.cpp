@@ -32,6 +32,8 @@ class CfgMagazines
 		count = "2";
 		author = "Crow Studios";
 		picture = "\training_core\crow_studios_co.paa";
+		model = "";
+		modelSpecial = "";
 	};
 
 	class training_mag_2rnd_12g_rubber : training_mag_2rnd_12g_base

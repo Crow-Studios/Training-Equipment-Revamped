@@ -58,3 +58,16 @@ class cfgWeapons
 		};
 	};
 };
+
+class cfgVehicles
+{
+    class Static;
+    class training_grenade_object_m18 : Static {
+		author="Crow Studios";
+        scope = 2;
+        model="training_grenade_m18\grenade_m18";
+        displayName = "M18 Training Grenade";
+        faction = "Empty";
+        vehicleClass = "training_grenade_class";
+    };
+};

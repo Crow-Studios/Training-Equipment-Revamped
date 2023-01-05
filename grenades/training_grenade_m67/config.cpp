@@ -57,3 +57,16 @@ class cfgWeapons
 		};
 	};
 };
+
+class cfgVehicles
+{
+    class Static;
+    class training_grenade_object_m67 : Static {
+		author="Crow Studios";
+        scope = 2;
+        model="training_grenade_m67\grenade_m67";
+        displayName = "M67 Training Grenade";
+        faction = "Empty";
+        vehicleClass = "training_grenade_class";
+    };
+};

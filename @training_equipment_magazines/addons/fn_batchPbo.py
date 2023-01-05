@@ -57,4 +57,5 @@ def packAllPbo(addonbuilder,img2paa,in_path,out_path):
     else:
         exit
 
+packAllPbo(addonbuilder, img2paa, "G:\Github Repos\\training_equipment_revamped\\mag_compats", out_path)
 packAllPbo(addonbuilder, img2paa, in_path, out_path)

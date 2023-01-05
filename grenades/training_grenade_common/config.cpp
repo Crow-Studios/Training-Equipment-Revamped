@@ -18,6 +18,14 @@ class cfgPatches
 #include "config\cfgAmmo.hpp"
 #include "config\cfgTrainingGrenades.hpp"
 
+class cfgVehicleClasses
+{
+	class training_grenade_class
+	{
+		displayName = "Training Grenades";
+	};
+};
+
 class CfgFunctions
 {
     class training_grenade
