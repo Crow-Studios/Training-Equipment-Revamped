@@ -11,6 +11,6 @@ ADDON = true;
     true, // "_isGlobal" flag. Set this to true to always have this setting synchronized between all clients in multiplayer
     {  
         params ["_value"];
-		missionNamespace setVariable ["training_mag_dynamic_unconsciousTime",_value];
+		missionNamespace setVariable ["training_mag_dynamic_unconsciousTime",_value,true];
     }
 ] call CBA_fnc_addSetting;

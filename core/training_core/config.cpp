@@ -37,7 +37,7 @@ class CfgFunctions
     };
 };
 
-class Extended_Init_EventHandlers {
+class Extended_InitPost_EventHandlers {
     class CAManBase {
 		class training_core_addEvent {
 			init = "[(_this select 0)] call training_core_fnc_client_addEvent";

@@ -14,7 +14,7 @@ if (_veh != _unit) then {
 	private _vehType = typeOf _veh;
 	if !("Quadbike" in _vehType || "Kart" in _vehType) exitWith {};
 	moveOut _unit;
-    _unit setVariable ["training_mag_var_canDamage", true];
+    _unit setVariable ["training_mag_var_canDamage", true, true];
 };
 
 if (_ace) then 

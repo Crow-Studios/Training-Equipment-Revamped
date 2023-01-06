@@ -61,7 +61,7 @@ class CfgFunctions
     };
 };
 
-class Extended_Init_EventHandlers {
+class Extended_InitPost_EventHandlers {
     class CAManBase {
 		class training_grenade_client_init {
 			init = "[(_this select 0)] call training_grenade_fnc_client_init";
