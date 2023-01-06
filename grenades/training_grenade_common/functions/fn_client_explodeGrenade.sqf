@@ -2,7 +2,7 @@ params ["_projectile", "_magazine"];
 
 _projectile setVariable ["_projectile_magazine", _magazine, true];
 
-_projectile addEventHandler ["Explode", 
+_projectile addEventHandler ["Explode",
 {
 	params ["_projectile", "_pos", "_velocity"];
 

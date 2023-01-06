@@ -82,6 +82,18 @@ class cfgMagazines
 		descriptionShort="I hope this is non lethal...";
 		mass = 4;
 	};
+	class 1Rnd_HE_Grenade_shell;
+	class training_40mm_mag_base : 1Rnd_HE_Grenade_shell
+	{
+		scope = 1;
+		author="Crow Studios/C. Eagle";
+		nameSound="";
+		displayName="40mm Training Grenade";
+		ammo="training_40mm_he_base";
+		picture = "\training_core\crow_studios_co.paa";
+		descriptionShort="I hope this is non lethal...";
+		mass = 4;
+	};
 	class SmokeShellBlue;
 	class training_grenade_mag_smoke_base: SmokeShellBlue
 	{

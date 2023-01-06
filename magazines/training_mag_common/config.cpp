@@ -39,11 +39,6 @@ class CfgFunctions
 				postInit = 0;
                 file = "training_mag_common\functions\fn_client_handleDamage.sqf";
             };
-            class client_hasACE
-            {
-				postInit = 0;
-                file = "training_mag_common\functions\fn_client_hasACE.sqf";
-            };
             class client_init
             {
 				postInit = 0;

@@ -14,4 +14,17 @@ class training_grenades
 
         training_grenade = 1;
     };
+    class training_40mm_he_base
+    {
+        unconsciousTime = 7;
+        ace_unconsciousTime = 12;
+
+        radius = 10; // damage is more concentrated with a 40mm
+
+        // these currently aren't implemented
+        ace_damageAreas[] = {"leg_r", "leg_l"};
+        ace_damageTypes[] = {"bullet"};
+
+        training_grenade = 1;
+    };
 };
