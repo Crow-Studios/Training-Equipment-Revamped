@@ -20,7 +20,7 @@ _projectile addEventHandler ["Explode",
 
     private _nearGrenade = nearestObjects [_grenade, ["CAManBase"], _radius];
 
-    hint str _nearGrenade;
+    //hint str _nearGrenade;
 
     {
         private _collides = lineIntersects [eyePos _x, getPosATL _grenade];

@@ -16,7 +16,7 @@ class cfgAmmo
 		CraterEffects="";
 		explosionEffects="";
 		explosive=0;
-		explosionTime = 2;
+		explosionTime = 5;
 		soundHit[]=
 		{
 			"",

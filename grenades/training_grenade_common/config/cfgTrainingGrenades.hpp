@@ -19,7 +19,7 @@ class training_grenades
         unconsciousTime = 7;
         ace_unconsciousTime = 12;
 
-        radius = 16;
+        radius = 10; // damage is more concentrated with a 40mm
 
         // these currently aren't implemented
         ace_damageAreas[] = {"leg_r", "leg_l"};
