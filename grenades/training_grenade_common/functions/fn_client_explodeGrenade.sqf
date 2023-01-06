@@ -2,7 +2,7 @@ params ["_projectile", "_magazine"];
 
 _projectile setVariable ["_projectile_magazine", _magazine];
 
-_projectile addEventHandler ["Explode", 
+_projectile addEventHandler ["Explode",
 {
 	params ["_projectile", "_pos", "_velocity"];
 
@@ -20,7 +20,7 @@ _projectile addEventHandler ["Explode",
 
     private _nearGrenade = nearestObjects [_grenade, ["CAManBase"], _radius];
 
-    hint str _nearGrenade;
+    //hint str _nearGrenade;
 
     {
         private _collides = lineIntersects [eyePos _x, getPosATL _grenade];
