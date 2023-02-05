@@ -47,4 +47,11 @@ class CfgMagazineWells
 			"training_40mm_mag_he"
 		};
 	};
+	class VOG_40mm
+    {
+        training_mag_compat_40mm[]=
+        {
+            "training_40mm_mag_he"
+        };
+    };
 };

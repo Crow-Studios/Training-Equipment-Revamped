@@ -1,7 +1,5 @@
 params ["_unit"];
 
-diag_log format ["Was unit a player? %1", (_unit isEqualTo player)];
-
 if (_unit isEqualTo player) exitWith {
 
     private _index = _unit addEventHandler ["Fired", 
@@ -30,6 +28,8 @@ if (_unit isEqualTo player) exitWith {
         }] call CBA_fnc_addEventHandler;
         // ace throwing compatibility
     };
+
+    //diag_log format ["Was unit a player? %1", (_unit isEqualTo player)];
 
     _index
 
